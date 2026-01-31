@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "agentbotpm",
+  "buildCommand": null,
+  "devCommand": null,
+  "installCommand": null,
+  "framework": null,
+  "outputDirectory": null
+}
