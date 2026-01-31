@@ -1,0 +1,35 @@
+{
+  "name": "agent-bot",
+  "version": "1.0.0",
+  "description": "Automated deployment and publishing workflow using Playwright - Create GitHub repos, authorize Supabase & Vercel",
+  "main": "scripts/deploy-complete.js",
+  "bin": {
+    "agent-deploy": "scripts/deploy-complete.js"
+  },
+  "scripts": {
+    "deploy": "node scripts/deploy-complete.js",
+    "create-repo": "node scripts/create-repo.js",
+    "auth-supabase": "node scripts/auth-supabase.js",
+    "auth-vercel": "node scripts/auth-vercel.js",
+    "test": "echo \"Available commands: npm run deploy, npm run create-repo, npm run auth-supabase, npm run auth-vercel\""
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "github",
+    "supabase",
+    "vercel",
+    "oauth",
+    "deployment",
+    "ci-cd"
+  ],
+  "author": "Claude Code",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "playwright": "^1.58.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

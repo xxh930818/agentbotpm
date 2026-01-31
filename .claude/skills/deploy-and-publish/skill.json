@@ -1,0 +1,44 @@
+{
+  "name": "deploy-and-publish",
+  "description": "Complete deployment and publishing workflow: Create GitHub repo, authorize Supabase, authorize Vercel",
+  "version": "1.0.0",
+  "author": "Claude Code",
+  "parameters": {
+    "githubEmail": {
+      "type": "string",
+      "description": "GitHub email for login",
+      "required": true
+    },
+    "githubPassword": {
+      "type": "string",
+      "description": "GitHub password for login",
+      "required": true
+    },
+    "repoName": {
+      "type": "string",
+      "description": "Repository name to create",
+      "required": false,
+      "default": "my-new-repo"
+    },
+    "isPrivate": {
+      "type": "boolean",
+      "description": "Create private repository",
+      "required": false,
+      "default": true
+    }
+  },
+  "steps": [
+    {
+      "name": "create-github-repo",
+      "description": "Create a new GitHub repository using Playwright"
+    },
+    {
+      "name": "authorize-supabase",
+      "description": "Authorize Supabase OAuth access"
+    },
+    {
+      "name": "authorize-vercel",
+      "description": "Authorize Vercel OAuth access"
+    }
+  ]
+}
